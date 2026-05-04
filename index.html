@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tangub City — The Rice Granary of Misamis Occidental</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400;700&family=Cinzel:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <div class="logo-emblem">⚜</div>
+                <div class="logo-text">
+                    <span class="logo-city">TANGUB</span>
+                    <span class="logo-sub">City · Misamis Occidental</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#attractions" class="nav-link">Attractions</a></li>
+                    <li><a href="#culture" class="nav-link">Culture</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#governance" class="nav-link">Governance</a></li>
+                    <li><a href="#contact" class="nav-link nav-cta">Visit Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+        <div class="hero-slideshow" id="heroSlideshow">
+            <div class="slide active" style="background-image: url('images/hero-1.jpg')"></div>
+            <div class="slide" style="background-image: url('images/hero-2.jpg')"></div>
+            <div class="slide" style="background-image: url('images/hero-3.jpg')"></div>
+            <div class="slide" style="background-image: url('images/hero-4.jpg')"></div>
+            <div class="slide" style="background-image: url('images/hero-5.jpg')"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Welcome to</p>
+            <h1 class="hero-title">Tangub City</h1>
+            <p class="hero-tagline">The Rice Granary of Misamis Occidental</p>
+            <p class="hero-desc">A city of golden fields, vibrant culture, and warm Mindanao hospitality nestled along the shores of Panguil Bay.</p>
+            <div class="hero-actions">
+                <a href="#attractions" class="btn btn-primary">Explore the City</a>
+                <a href="#about" class="btn btn-outline">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-slide-indicators" id="slideIndicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
+            <button class="indicator" data-slide="4"></button>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Our Story</span>
+                <h2 class="section-title">About Tangub City</h2>
+                <div class="title-rule"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-photo-col" data-reveal>
+                    <div class="photo-frame">
+                        <img src="images/about-photo.jpg" alt="Tangub City Hall" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="photo-caption">Tangub City Hall</div>
+                    </div>
+                    <div class="stat-cards">
+                        <div class="stat-card">
+                            <span class="stat-num">108K+</span>
+                            <span class="stat-label">Population</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">343</span>
+                            <span class="stat-label">km² Area</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">34</span>
+                            <span class="stat-label">Barangays</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-col" data-reveal>
+                    <h3>A City Rooted in Heritage</h3>
+                    <p>Tangub City is a component city in the province of Misamis Occidental, Philippines, located in the northern coast of Mindanao. It sits along the beautiful shores of Panguil Bay, offering breathtaking views and a rich maritime heritage.</p>
+                    <p>Known as the <em>"Rice Granary of Misamis Occidental,"</em> Tangub City has long been a vital agricultural hub. Its fertile plains and hardworking people have made it one of the most productive rice-producing areas in the region.</p>
+                    <p>The city became a component city by virtue of <strong>Republic Act No. 8300</strong> on June 6, 1997, converting the municipality of Tangub into the City of Tangub. It retains its vibrant cultural identity while progressing toward modern development.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item"><span class="highlight-icon">🌾</span><span>Agriculture & Rice Production</span></div>
+                        <div class="highlight-item"><span class="highlight-icon">🌊</span><span>Panguil Bay Coastline</span></div>
+                        <div class="highlight-item"><span class="highlight-icon">🏛️</span><span>Rich Cultural Heritage</span></div>
+                        <div class="highlight-item"><span class="highlight-icon">🎉</span><span>Vibrant Festival Traditions</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ATTRACTIONS ========== -->
+    <section id="attractions" class="section section-dark">
+        <div class="container">
+            <div class="section-header light" data-reveal>
+                <span class="section-eyebrow">Discover</span>
+                <h2 class="section-title">Top Attractions</h2>
+                <div class="title-rule"></div>
+                <p class="section-subtitle">Click any attraction to explore more</p>
+            </div>
+            <div class="cards-grid" id="attractionsGrid">
+
+                <div class="info-card" data-reveal data-modal="modal-panguil">
+                    <div class="card-photo">
+                        <img src="images/panguil-bay.jpg" alt="Panguil Bay" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge">Nature</div>
+                        <div class="card-overlay"><span>Explore →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Panguil Bay</h3>
+                        <p>A stunning bay offering scenic waterfront views, fresh seafood, and peaceful sunsets.</p>
+                    </div>
+                </div>
+
+                <div class="info-card" data-reveal data-modal="modal-ricefields">
+                    <div class="card-photo">
+                        <img src="images/rice-fields.jpg" alt="Tangub Rice Fields" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge">Agriculture</div>
+                        <div class="card-overlay"><span>Explore →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Golden Rice Fields</h3>
+                        <p>The expansive paddies that give Tangub its iconic title — a sea of green and gold.</p>
+                    </div>
+                </div>
+
+                <div class="info-card" data-reveal data-modal="modal-church">
+                    <div class="card-photo">
+                        <img src="images/church.JPG" alt="St. John the Baptist Parish" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge">Heritage</div>
+                        <div class="card-overlay"><span>Explore →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>St. John the Baptist Parish</h3>
+                        <p>The patron saint's church — a cornerstone of faith and community life.</p>
+                    </div>
+                </div>
+
+                <div class="info-card" data-reveal data-modal="modal-plaza">
+                    <div class="card-photo">
+                        <img src="images/plaza.jpg" alt="Tangub City Plaza" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge">Leisure</div>
+                        <div class="card-overlay"><span>Explore →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>City Plaza & Park</h3>
+                        <p>The heart of the city's social life — gathering place for celebrations and community.</p>
+                    </div>
+                </div>
+
+                <div class="info-card" data-reveal data-modal="modal-market">
+                    <div class="card-photo">
+                        <img src="images/market.jpg" alt="Tangub Public Market" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge">Commerce</div>
+                        <div class="card-overlay"><span>Explore →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Public Market</h3>
+                        <p>A bustling market filled with the freshest local produce and Panguil Bay seafood.</p>
+                    </div>
+                </div>
+
+                <div class="info-card" data-reveal data-modal="modal-falls">
+                    <div class="card-photo">
+                        <img src="images/falls.jpg" alt="Local Waterfalls" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge">Adventure</div>
+                        <div class="card-overlay"><span>Explore →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Natural Waterfalls</h3>
+                        <p>Hidden gems tucked in Tangub's lush hinterlands — perfect for eco-tourism.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CULTURE ========== -->
+    <section id="culture" class="section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-eyebrow">Tradition & Identity</span>
+                <h2 class="section-title">Culture & Heritage</h2>
+                <div class="title-rule"></div>
+                <p class="section-subtitle section-subtitle-dark">Click any card to learn more</p>
+            </div>
+            <div class="cards-grid" id="cultureGrid">
+
+                <div class="info-card culture-card-item" data-reveal data-modal="modal-fiesta">
+                    <div class="card-photo">
+                        <img src="images/festival.jpg" alt="Fiesta" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge badge-gold">Festival</div>
+                        <div class="card-overlay"><span>Learn More →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>🎉 Fiesta Celebrations</h3>
+                        <p>The feast of St. John the Baptist celebrated with parades, shows, and community joy.</p>
+                    </div>
+                </div>
+
+                <div class="info-card culture-card-item" data-reveal data-modal="modal-cuisine">
+                    <div class="card-photo">
+                        <img src="images/cuisine.jpg" alt="Local Cuisine" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge badge-gold">Food</div>
+                        <div class="card-overlay"><span>Learn More →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>🍚 Local Cuisine</h3>
+                        <p>From freshly harvested rice to Panguil Bay seafood — a rich culinary identity.</p>
+                    </div>
+                </div>
+
+                <div class="info-card culture-card-item" data-reveal data-modal="modal-arts">
+                    <div class="card-photo">
+                        <img src="images/arts.jpg" alt="Arts and Music" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge badge-gold">Arts</div>
+                        <div class="card-overlay"><span>Learn More →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>🎵 Arts & Music</h3>
+                        <p>Folk songs, dances, and crafts preserved through generations of cultural pride.</p>
+                    </div>
+                </div>
+
+                <div class="info-card culture-card-item" data-reveal data-modal="modal-bayanihan">
+                    <div class="card-photo">
+                        <img src="images/bayanihan.jpg" alt="Bayanihan Spirit" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge badge-gold">Community</div>
+                        <div class="card-overlay"><span>Learn More →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>🤝 Bayanihan Spirit</h3>
+                        <p>Deep community bonds and mutual support define the soul of Tangub.</p>
+                    </div>
+                </div>
+
+                <div class="info-card culture-card-item" data-reveal data-modal="modal-history">
+                    <div class="card-photo">
+                        <img src="images/history.jpg" alt="History" onerror="this.parentElement.classList.add('empty-photo')" />
+                        <div class="card-badge badge-gold">History</div>
+                        <div class="card-overlay"><span>Learn More →</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>📜 History & Heritage</h3>
+                        <p>Tangub's storied past, from its founding to becoming a component city in 1997.</p>
+                    </div>
+                </div>
+
+               
+
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="section section-dark">
+        <div class="container">
+            <div class="section-header light" data-reveal>
+                <span class="section-eyebrow">For the People</span>
+                <h2 class="section-title">City Services</h2>
+                <div class="title-rule"></div>
+                <p class="section-subtitle">Click any service for full information</p>
+            </div>
+            <div class="services-grid" id="servicesGrid">
+
+                <div class="service-card" data-reveal data-modal="modal-health">
+                    <div class="service-icon">🏥</div>
+                    <h3>Health Services</h3>
+                    <p>City Health Office, Rural Health Units, and Barangay Health Centers across 34 barangays.</p>
+                    <span class="service-cta">Learn More →</span>
+                </div>
+
+                <div class="service-card" data-reveal data-modal="modal-education">
+                    <div class="service-icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>Public schools, alternative learning programs, and scholarship opportunities for residents.</p>
+                    <span class="service-cta">Learn More →</span>
+                </div>
+
+                <div class="service-card" data-reveal data-modal="modal-publicworks">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Public Works</h3>
+                    <p>Roads, bridges, flood control, and infrastructure development across Tangub City.</p>
+                    <span class="service-cta">Learn More →</span>
+                </div>
+
+                <div class="service-card" data-reveal data-modal="modal-socialwelfare">
+                    <div class="service-icon">🤲</div>
+                    <h3>Social Welfare</h3>
+                    <p>DSWD programs, 4Ps, senior citizen benefits, PWD assistance, and community support.</p>
+                    <span class="service-cta">Learn More →</span>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GOVERNANCE ========== -->
+    <section id="governance" class="section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-eyebrow">Leadership & Service</span>
+                <h2 class="section-title">City Governance</h2>
+                <div class="title-rule"></div>
+            </div>
+            <div class="governance-intro" data-reveal>
+                <p>The City Government of Tangub is committed to transparent, accountable, and inclusive governance — delivering essential services and sustainable development for all 34 barangays.</p>
+            </div>
+
+            <!-- Executive Officers -->
+            <div class="gov-section-label" data-reveal>Executive Officials</div>
+            <div class="exec-cards" data-reveal>
+                <div class="exec-card featured">
+                    <div class="exec-photo">
+                        <img src="images/mayor.jpg" alt="Mayor Sabiniano S. Canama" onerror="this.parentElement.classList.add('empty-photo')" />
+                    </div>
+                    <div class="exec-info">
+                        <span class="exec-position">City Mayor</span>
+                        <span class="exec-name">Sabiniano S. Canama</span>
+                    </div>
+                </div>
+                <div class="exec-card featured">
+                    <div class="exec-photo">
+                        <img src="images/vice-mayor.jpg" alt="Vice Mayor Tito B. Decina" onerror="this.parentElement.classList.add('empty-photo')" />
+                    </div>
+                    <div class="exec-info">
+                        <span class="exec-position">City Vice Mayor · Chairman, Committee of the Whole</span>
+                        <span class="exec-name">Tito B. Decina</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sangguniang Panlungsod -->
+            <div class="gov-section-label" data-reveal>Sangguniang Panlungsod</div>
+            <div class="councilors-grid" data-reveal>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-caylan.jpg" alt="Hon. Antonio S. Caylan Jr." onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Antonio S. Caylan Jr.</span>
+                        <span class="councilor-committees">Tourism, Archeology & Antiques · Youth & Sports Development</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-alcalde.jpg" alt="Hon. Lowida L. Alcalde" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Lowida L. Alcalde</span>
+                        <span class="councilor-committees">Education, Culture & the Arts · Public Media Affairs</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-chiong.jpg" alt="Hon. Francisco I. Chiong" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Francisco I. Chiong</span>
+                        <span class="councilor-committees">Laws & Legal Matters · Blue Ribbon, Ethics & Grievances</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-gomez.jpg" alt="Hon. Eddie Gomez" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Eddie Gomez</span>
+                        <span class="councilor-committees">Health, Nutrition & Sanitation · Senior Citizen & PWD</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-roxas.jpg" alt="Hon. Hipolito G. Roxas" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Hipolito G. Roxas</span>
+                        <span class="councilor-committees">Infrastructure & Public Works · Peace & Order</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-roma.jpg" alt="Hon. Rubin R. Roma" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Rubin R. Roma</span>
+                        <span class="councilor-committees">Agriculture, Foods & Fisheries · Cooperatives & Accreditation</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-tala.jpg" alt="Hon. Leonido C. Tala" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Leonido C. Tala</span>
+                        <span class="councilor-committees">Finance & Appropriation · City Planning & Environmental Protection</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-amamio.jpg" alt="Hon. Marissa V. Amamio" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Marissa V. Amamio</span>
+                        <span class="councilor-committees">Market & Taxation · Women, Children & Family</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-delsocorro.jpg" alt="Hon. Romulo L. Del Socorro" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Romulo L. Del Socorro</span>
+                        <span class="councilor-committees">Transportation & Franchise · Games, Recreations & Amusements</span>
+                    </div>
+                </div>
+
+                <div class="councilor-card">
+                    <div class="councilor-photo"><img src="images/official-retuerto.jpg" alt="Hon. Alexander M. Retuerto" onerror="this.parentElement.classList.add('empty-photo')" /></div>
+                    <div class="councilor-info">
+                        <span class="councilor-name">Hon. Alexander M. Retuerto</span>
+                        <span class="councilor-committees">Public & Social Welfare · Barangay Affairs</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gov-links" data-reveal>
+                <a href="#" class="gov-link">📋 City Ordinances</a>
+                <a href="#" class="gov-link">📊 Budget & Finance</a>
+                <a href="#" class="gov-link">🏥 Health Services</a>
+                <a href="#" class="gov-link">🏗️ Public Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="section-header light" data-reveal>
+                <span class="section-eyebrow">Get in Touch</span>
+                <h2 class="section-title">Visit Tangub City</h2>
+                <div class="title-rule"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-reveal>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Address</strong>
+                            <p>Tangub City, Misamis Occidental<br />Region X, Mindanao, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>City Hall Contact</strong>
+                            <p>(088) City Hall Number</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>cityhall@tangub.gov.ph</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <strong>Office Hours</strong>
+                            <p>Monday – Friday · 8:00 AM – 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map" data-reveal>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63200!2d123.7!3d8.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ffb67ac2b2471b%3A0x9c9b4a2c4f28ed4f!2sTangub%2C%20Misamis%20Occidental!5e0!3m2!1sen!2sph!4v1"
+                            width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Tangub City Map"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚜</span>
+                    <div>
+                        <span class="footer-city">TANGUB CITY</span>
+                        <span class="footer-province">Misamis Occidental, Philippines</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#attractions">Attractions</a>
+                    <a href="#culture">Culture</a>
+                    <a href="#economy">Economy</a>
+                    <a href="#services">Services</a>
+                    <a href="#governance">Governance</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 City Government of Tangub. All rights reserved.</p>
+                <p class="footer-motto"><em>"Progress with Honor, Service with Heart"</em></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== MODALS ========== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box" id="modalBox" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
