@@ -57,7 +57,7 @@ const modalData = {
     'modal-church': {
         title: 'St. John the Baptist Parish',
         badge: 'Heritage',
-        heroImg: 'images/church.jpg',
+        heroImg: 'images/church.JPG',
         gallery: ['images/church-1.jpg', 'images/church-2.jpg', 'images/church-3.jpg'],
         body: `
       <p>The Parish of St. John the Baptist stands as the spiritual heart of Tangub City. This beloved church has been central to the faith life of the community for many decades, serving as the venue for countless baptisms, weddings, and community milestones.</p>
